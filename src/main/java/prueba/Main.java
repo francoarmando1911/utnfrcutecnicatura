@@ -4,22 +4,21 @@ public class Main {
     public static void main(String[] args) {
 
         Circulo circ = new Circulo();
-        circ.color = "rojo";
-        circ.radio = 23;
+        circ.setColor("rojo");
+        circ.setRadio(25);
         double circunsferencia = circ.getCircunsferencia();
         System.out.println("Circulo: " + circunsferencia);
 
         Circulo cir2 = new Circulo();
-        cir2.color = "verde";
-        cir2.radio = 30;
+        cir2.setColor("verde");
+        cir2.setRadio(30);
         double circunsferencia2 = cir2.getCircunsferencia();
         System.out.println("Circulo: " + circunsferencia2);
 
         Circulo cir3 = new Circulo();
-        cir3.color = "azul";
-        cir2.radio = 40;
+        cir3.setColor("azul");
+        cir3.setRadio(35);
         double circunsferencia3 = cir3.getCircunsferencia();
         System.out.println("Circulo: " + circunsferencia3);
-
     }
 }
