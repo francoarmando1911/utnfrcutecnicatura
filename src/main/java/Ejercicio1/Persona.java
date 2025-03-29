@@ -51,20 +51,22 @@ package Ejercicio1;
 public class Persona {
 
     // - Sus atributos son: nombre, edad, DNI, sexo, peso y altura.
-    private String nombre = "";
+    public String nombre = "";
     private int edad = 0;
-    private String sexo = "H";
-    private int dni;
-    private double peso = 0;
-    private double altura = 0;
+    public String sexo = "H";
+    public int dni;
+    public double peso = 0;
+    public double altura = 0;
 
     public Persona() {
+        this.dni = generaDNI();
     }
 
     public Persona(String nombre, int edad, String sexo) {
         this.nombre = nombre;
         this.edad = edad;
         this.sexo = sexo;
+        this.dni = generaDNI();
     }
 
     public Persona(String nombre, int edad, String sexo, int dni, double peso, double altura) {
@@ -75,8 +77,6 @@ public class Persona {
         this.peso = peso;
         this.altura = altura;
     }
-
-    // Métodos set
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -98,6 +98,25 @@ public class Persona {
         this.altura = altura;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
 
     /* calcularIMC():
      - Calcula si la persona está en su peso ideal (fórmula: peso en kg / (altura^2 en metros)).
@@ -106,7 +125,7 @@ public class Persona {
      - Si es mayor a 25 → retorna 1 (sobrepeso).
      - Usar constantes para estos valores de retorno.*/
 
-    public static double calcularIMC(double peso, double altura){
+    public int calcularIMC(double peso, double altura) {
         double imc = peso / (altura * altura);
         if (imc < 20) {
             return -1;
@@ -120,12 +139,8 @@ public class Persona {
     /* esMayorDeEdad():
      - Devuelve true si la persona es mayor de edad (18 o más), sino false.*/
 
-    public static boolean esMayorEdad(int edad){
-        if (edad >=18){
-            return true;
-        } else{
-            return false;
-        }
+    public boolean esMayorEdad(int edad) {
+        return edad >= 18;
     }
 
     /* comprobarSexo():
@@ -133,10 +148,10 @@ public class Persona {
     - Si no es válido, se asigna 'H'.
     - No será visible desde fuera (private).*/
 
-    private void comprobarSexo(String sexo){
-        if (sexo.equals("H") || sexo.equals("M")){
+    private void comprobarSexo(String sexo) {
+        if (sexo.equals("H") || sexo.equals("M")) {
             this.sexo = sexo;
-        } else{
+        } else {
             this.sexo = "H";
         }
     }
@@ -160,10 +175,7 @@ public class Persona {
     - No será visible desde fuera (private).
     - Puede dividirse en varios métodos si es necesario.*/
 
-    private static int generaDNI(){
-        int dni = (int) (Math.random() * 100000000);
-        return dni;
+    private static int generaDNI() {
+        return (int) (Math.random() * 100000000);
     }
-
-
 }
