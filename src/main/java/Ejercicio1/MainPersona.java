@@ -36,6 +36,5 @@ public class MainPersona {
         System.out.println(persona3.toString());
         System.out.println("Peso ideal: " + persona3.calcularIMC(persona3.getPeso(), persona3.getAltura()));
         System.out.println("Mayor de edad: " + persona3.esMayorEdad(persona3.getEdad()));
-
     }
 }
