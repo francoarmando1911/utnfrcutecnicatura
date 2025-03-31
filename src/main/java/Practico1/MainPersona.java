@@ -1,4 +1,4 @@
-package Ejercicio1;
+package Practico1;
 /* Clase Main:
    - Crear 3 objetos de la clase Persona:
    - El primero con todos los atributos seteados.

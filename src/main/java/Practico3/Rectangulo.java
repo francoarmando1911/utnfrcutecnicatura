@@ -1,4 +1,4 @@
-package Ejercicio3;
+package Practico3;
 
 public class Rectangulo {
     double base;

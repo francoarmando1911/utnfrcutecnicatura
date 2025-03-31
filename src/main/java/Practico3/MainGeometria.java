@@ -1,4 +1,4 @@
-package Ejercicio3;
+package Practico3;
 
 /*
 Crear clases  `Circulo`, `Rectangulo` y `Triangulo`  cada una de estas debe tener los siguientes metodos:

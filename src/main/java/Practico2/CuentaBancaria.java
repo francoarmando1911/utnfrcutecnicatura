@@ -1,5 +1,5 @@
-package Ejercicio2;
-import Ejercicio1.Persona;
+package Practico2;
+import Practico1.Persona;
 /*
 Crea una clase llamada CuentaBancaria que tendrá los siguientes atributos: titular y saldo (puede tener decimales).
 El titular es del tipo Persona ( Persona del Practico 1) será obligatorio y el saldo se inicializa en cero. Crea el/los
