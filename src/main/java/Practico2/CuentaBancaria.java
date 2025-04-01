@@ -1,5 +1,7 @@
 package Practico2;
 import Practico1.Persona;
+
+import java.util.List;
 /*
 Crea una clase llamada CuentaBancaria que tendrá los siguientes atributos: titular y saldo (puede tener decimales).
 El titular es del tipo Persona ( Persona del Practico 1) será obligatorio y el saldo se inicializa en cero. Crea el/los
@@ -13,13 +15,15 @@ Tendrá dos métodos especiales:
 public class CuentaBancaria {
     private Persona titular;
     private double saldo;
+    private List<Movimiento> movimiento;
 
     public CuentaBancaria() {
     }
 
-    public CuentaBancaria(double saldo, String nombreTitular) {
-        this.saldo = saldo = 0.0;
-        this.titular = new Persona(nombreTitular);
+    public CuentaBancaria(Persona titular, double saldo, List<Movimiento> movimiento) {
+        this.titular = titular;
+        this.saldo = saldo;
+        this.movimiento = movimiento;
     }
 
     public Persona getTitular() {
@@ -36,6 +40,14 @@ public class CuentaBancaria {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+
+    public List<Movimiento> getMovimiento() {
+        return movimiento;
+    }
+
+    public void setMovimiento(List<Movimiento> movimiento) {
+        this.movimiento = movimiento;
     }
 
     public void ingresarDinero(double cantidad){

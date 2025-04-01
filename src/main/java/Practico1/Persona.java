@@ -111,14 +111,16 @@ public class Persona {
     /* toString():
      - Devuelve toda la información del objeto en formato String.*/
 
+    @Override
     public String toString() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Edad: " + edad);
-        System.out.println("Sexo: " + sexo);
-        System.out.println("DNI: " + dni);
-        System.out.println("Peso: " + peso);
-        System.out.println("Altura: " + altura);
-        return "Nombre: " + nombre + "\nEdad: " + edad + "\nSexo: " + sexo + "\nDNI: " + dni + "\nPeso: " + peso + "\nAltura: " + altura;
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                ", sexo='" + sexo + '\'' +
+                ", dni=" + dni +
+                ", peso=" + peso +
+                ", altura=" + altura +
+                '}';
     }
 
     /* generaDNI():
