@@ -1,4 +1,4 @@
-package practico4ClaseCuentaHerencia;
+package practico4_cuenta_bancaria;
 
 public class CuentaAhorros extends Cuenta {
 
