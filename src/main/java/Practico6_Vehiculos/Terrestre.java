@@ -16,8 +16,4 @@ public class Terrestre extends Vehiculo implements Motor{
         return velocidad - 40;
     }
 
-    //calcularRevolucionesMotor
-    public static int calcuarRevolucionesMotor(int fuerza, int radio){
-
-    }
 }

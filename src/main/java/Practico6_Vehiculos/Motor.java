@@ -7,4 +7,7 @@ multiplicación de la fuerza del motor por su radio.
  */
 
 public interface Motor {
+    static int calcularRevolucionesMotor(int fuerza, int radio) {
+        return fuerza * radio;
+    }
 }
