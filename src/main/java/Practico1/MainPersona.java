@@ -15,7 +15,7 @@ public class MainPersona {
         // Crear 3 objetos de la clase Persona
         Persona persona1 = new Persona("Franco", 22, "H", 12345678, 90, 1.85);
         Persona persona2 = new Persona("Natalia", 30, "M");
-        Persona persona3 = new Persona("Pepe");
+        Persona persona3 = new Persona("Peped");
 
         // Setear valores para el tercer objeto
         persona3.setNombre("Iñaki");
