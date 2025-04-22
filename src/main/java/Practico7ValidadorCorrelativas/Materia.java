@@ -1,15 +1,20 @@
 package Practico7ValidadorCorrelativas;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Materia {
 
     private String nombre;
-    private List<Materia> correlativas;
+    private ArrayList<Materia> correlativas;
 
-    public Materia(String nombre, List<Materia> correlativas) {
+    public Materia(String nombre) {
         this.nombre = nombre;
-        this.correlativas = correlativas;
+        this.correlativas = new ArrayList<Materia>();
+    }
+
+    public Materia(Materia correlativas, String nombre) {
+        this.correlativas.add(correlativas);
+        this.nombre = nombre;
     }
 
     public String getNombre() {
@@ -20,13 +25,16 @@ public class Materia {
         this.nombre = nombre;
     }
 
-    public List<Materia> getCorrelativas() {
+    public ArrayList<Materia> getCorrelativas() {
         return correlativas;
     }
 
-    public void setCorrelativas(List<Materia> correlativas) {
+    public void setCorrelativas(ArrayList<Materia> correlativas) {
         this.correlativas = correlativas;
     }
 
     //metodo puedeCursar(Alumno: boolean)
+    static boolean puedeCursar(Alumno alumno) {
+        retrun true
+    }
 }
