@@ -5,4 +5,5 @@ public class SensorTemperatura extends SensorAmbiental{
         super(tipoSensor, valor);
     }
 
+    //medirTemperatura()
 }
