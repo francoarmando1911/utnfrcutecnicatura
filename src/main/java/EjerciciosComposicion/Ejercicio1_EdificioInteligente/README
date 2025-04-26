@@ -1,0 +1,4 @@
+Crear un sistema para gestionar un EdificioInteligente, que contiene múltiples Departamento, y cada uno de estos
+contiene uno o más SensorAmbiental (temperatura, humedad, etc.).
+Los sensores son creados y destruidos junto con el departamento, y estos a su vez dependen del edificio. Es decir,
+la relación es de composición fuerte en cascada.

@@ -1,0 +1,4 @@
+Modelar una plataforma de videojuegos (Plataforma) que gestiona múltiples Juego.
+Cada Juego contiene internamente una lista de Nivel, y cada Nivel tiene varios Enemigo.
+Los niveles y enemigos son componentes internos que no tienen sentido fuera del juego, y los juegos solo existen
+dentro de la plataforma.
