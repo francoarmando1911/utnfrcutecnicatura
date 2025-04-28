@@ -1,5 +1,6 @@
 package EjerciciosComposicion.Ejercicio2_Videojuegos;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Plataforma {
@@ -7,7 +8,7 @@ public class Plataforma {
     private List<Juego> juegos;
 
     public Plataforma(List<Juego> juegos) {
-        this.juegos = new List<>();
+        this.juegos = new ArrayList<>(juegos);
     }
 
     //metodo agregarJuego(juego: Juego): void
