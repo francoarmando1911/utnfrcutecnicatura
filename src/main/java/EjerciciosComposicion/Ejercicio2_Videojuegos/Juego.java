@@ -11,7 +11,16 @@ public class Juego {
         this.niveles = new ArrayList<>();
     }
 
-    //metodo agregarNuvel(nuvel: Nivel): void
-    //metodo eliminarNuvel(nuvel: Nivel): void
-    // metodo obtenerNiveles(): List<Nivel>
+    public void agregarNivel(Nivel niveles){
+        this.niveles.add(niveles);
+    }
+
+    public void eliminarNivel(Nivel niveles){
+        this.niveles.remove(niveles);
+    }
+
+    public List<Nivel> obtenerNiveles(){
+        return this.niveles;
+    }
+
 }
