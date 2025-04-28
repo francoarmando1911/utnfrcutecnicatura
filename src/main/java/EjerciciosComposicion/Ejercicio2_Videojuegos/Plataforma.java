@@ -11,7 +11,15 @@ public class Plataforma {
         this.juegos = new ArrayList<>(juegos);
     }
 
-    //metodo agregarJuego(juego: Juego): void
-    //metodo eliminarJuego(juego: Juego): void
-    //metodo obtenerJuegos(): List<Juego>
+    public void agregarJuego(Juego juego) {
+        this.juegos.add(juego);
+    }
+
+    public void eliminarJuego(Juego juego){
+        this.juegos.remove(juego);
+    }
+
+    public List<Juego> obtenerJuegos() {
+        return this.juegos;
+    }
 }
