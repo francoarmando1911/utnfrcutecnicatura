@@ -2,3 +2,54 @@ Modelar una plataforma de videojuegos (Plataforma) que gestiona múltiples Juego
 Cada Juego contiene internamente una lista de Nivel, y cada Nivel tiene varios Enemigo.
 Los niveles y enemigos son componentes internos que no tienen sentido fuera del juego, y los juegos solo existen
 dentro de la plataforma.
+
++----------------+
+|   Plataforma   |
++----------------+
+| - juegos: List<Juego>
++----------------+
+| + agregarJuego(juego: Juego): void
+| + eliminarJuego(juego: Juego): void
+| + obtenerJuegos(): List<Juego>
++----------------+
+
+       1
+       |
+       | contiene
+       | *
++----------------+
+|     Juego      |
++----------------+
+| - niveles: List<Nivel>
++----------------+
+| + agregarNivel(nivel: Nivel): void
+| + eliminarNivel(nivel: Nivel): void
+| + obtenerNiveles(): List<Nivel>
++----------------+
+
+       1
+       |
+       | contiene
+       | *
++----------------+
+|     Nivel      |
++----------------+
+| - enemigos: List<Enemigo>
++----------------+
+| + agregarEnemigo(enemigo: Enemigo): void
+| + eliminarEnemigo(enemigo: Enemigo): void
+| + obtenerEnemigos(): List<Enemigo>
++----------------+
+
+       1
+       |
+       | contiene
+       | *
++----------------+
+|    Enemigo     |
++----------------+
+| - nombre: String
+| - poder: int
++----------------+
+| + atacar(): void
++----------------+

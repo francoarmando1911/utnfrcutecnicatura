@@ -1,4 +1,4 @@
 package EjerciciosComposicion.Ejercicio2_Videojuegos;
 
-public class Enemigo {
+public class Enemigo  {
 }
