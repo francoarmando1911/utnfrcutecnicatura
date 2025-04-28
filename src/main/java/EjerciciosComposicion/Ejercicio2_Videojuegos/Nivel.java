@@ -10,7 +10,16 @@ public class Nivel {
         this.enemigos = new ArrayList<>();
     }
 
-    //agregarEnemigo(enemigo: Enemigo): void
-    //eliminarEnemigo(enemigo: Enemigo):: void
-    //obtenerEnemigo(): List<Enemigo>
+    public void agregarEnemigo(Enemigo enemigo){
+        this.enemigos.add(enemigo);
+    }
+
+    public void eliminarEnemigo(Enemigo enemigo){
+        this.enemigos.remove(enemigo);
+    }
+
+    public List<Enemigo> obtenerEnemigo(){
+        return this.enemigos;
+    }
+
 }
