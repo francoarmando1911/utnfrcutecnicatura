@@ -10,5 +10,8 @@ public class Enemigo  {
         this.poder = poder;
     }
 
-    //atacar():void
+    public void atacar(Enemigo enemigo){
+        System.out.println(this.nombre + " ataca a " + enemigo.nombre + " con poder " + this.poder);
+    }
+
 }
