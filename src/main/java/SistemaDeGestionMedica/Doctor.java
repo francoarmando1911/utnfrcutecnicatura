@@ -4,5 +4,16 @@ public class Doctor {
 
     private String nombre;
     private String matricula;
-    private String especialidad;
+
+    public enum especialidad{
+        PEDIATRA,
+        ONCOLOGO,
+        NEUROLOGO,
+        TRAUMATOLOGO
+    }
+
+    public Doctor(String nombre, String matricula) {
+        this.nombre = nombre;
+        this.matricula = matricula;
+    }
 }
