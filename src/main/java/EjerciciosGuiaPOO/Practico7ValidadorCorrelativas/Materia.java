@@ -33,8 +33,4 @@ public class Materia {
         this.correlativas = correlativas;
     }
 
-    //metodo puedeCursar(Alumno: boolean)
-    static boolean puedeCursar(Alumno alumno) {
-        retrun true
-    }
 }

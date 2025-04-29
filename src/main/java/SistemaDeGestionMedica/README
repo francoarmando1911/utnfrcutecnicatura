@@ -1,0 +1,83 @@
+Consigna
+Se solicita desarrollar un sistema orientado a objetos que permita modelar la estructura y
+funcionamiento interno de un hospital, incluyendo la gestión de personal médico,
+pacientes, especialidades médicas y recursos físicos.
+Entidades Principales
+ Hospital
+ Doctor
+ Enfermero
+ Paciente
+ EspecialidadMedica
+ SalaAtencion
+ Quirofano
+Requerimientos
+1. Clases a definir:
+ Hospital: representa el hospital general. Administra personal, pacientes y recursos físicos.
+ Doctor: contiene datos personales, matrícula y especialidad médica.
+ Enfermero: contiene nombre, matrícula profesional y área de servicio asignada.
+ Paciente: incluye nombre, historial médico y número de historia clínica.
+ EspecialidadMedica: describe una especialidad médica (ej. Cardiología, Pediatría,
+Cirugía).
+ SalaAtencion: sala destinada a consultas o procedimientos simples.
+ Quirofano: sala especializada para cirugías.
+2. Relaciones:
+ Un Hospital administra múltiples Doctores, Enfermeros, Pacientes, SalasAtencion y
+Quirofanos.
+ Cada Doctor tiene una EspecialidadMedica.
+ Un Doctor puede atender a varios Pacientes.
+ Un Paciente puede ser asignado a una SalaAtencion o programado en un Quirofano.
+
+ Un Enfermero puede estar asociado a una SalaAtencion o a un Quirofano.
+ Un Quirofano puede ser reservado para intervenciones quirúrgicas específicas.
+3. Funcionalidades mínimas:
+ Registrar nuevos doctores, enfermeros, pacientes y especialidades médicas.
+ Asignar pacientes a doctores y salas de atención.
+ Programar cirugías en quirófanos disponibles.
+ Gestionar la disponibilidad de salas y quirófanos.
+ Mostrar reportes con el listado de doctores, pacientes y recursos asignados.
+
+
+
++----------------+        +--------------------+
+|   Hospital     |<>------>|      Doctor         |
++----------------+        +--------------------+
+| - nombre       |        | - nombre            |
+| - direccion    |        | - matricula         |
+| - telefono     |        | - especialidad:     |
+|                |        |   EspecialidadMedica|
+| +agregarDoctor()|       | +atenderPaciente()  |
+| +agregarPaciente()|     +--------------------+
+| +agregarSala() |
+| +agregarQuirofano()|
++----------------+
+
+        |
+        |
+        |<>------------------+
+        |                    |
++------------------+    +-------------------+
+|   Enfermero       |    |     Paciente       |
++------------------+    +-------------------+
+| - nombre          |    | - nombre           |
+| - matricula       |    | - historialMedico  |
+| - areaServicio    |    | - numHistoriaClinica|
+| +asignarSala()    |    +-------------------+
++------------------+
+
+        |
+        |<>-----------------+
+        |                   |
++-------------------+   +-----------------+
+|   SalaAtencion     |   |    Quirofano     |
++-------------------+   +-----------------+
+| - numeroSala       |   | - numeroQuirofano|
+| - tipoSala         |   | - reservadoPara  |
+| +reservar()        |   | +programarCirugia()|
++-------------------+   +-----------------+
+
++------------------------+
+| EspecialidadMedica      |
++------------------------+
+| - nombre                |
+| - descripcion           |
++------------------------+
