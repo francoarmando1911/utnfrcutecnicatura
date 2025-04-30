@@ -1,0 +1,44 @@
+# Trabajo Práctico: Sistema de Gestión Médica Hospitalaria
+
+## Consigna
+
+Se solicita desarrollar un sistema orientado a objetos que permita modelar la estructura y funcionamiento interno de un hospital, incluyendo la gestión de personal médico, pacientes, especialidades médicas y recursos físicos.
+
+## Entidades Principales
+
+* Hospital
+* Doctor
+* Enfermero
+* Paciente
+* EspecialidadMedica
+* SalaAtencion
+* Quirofano
+
+## Requerimientos
+
+### 1. Clases a definir:
+
+* **Hospital:** Representa el hospital general. Administra personal, pacientes y recursos físicos.
+* **Doctor:** Contiene datos personales, matrícula y especialidad médica.
+* **Enfermero:** Contiene nombre, matrícula profesional y área de servicio asignada.
+* **Paciente:** Incluye nombre, historial médico y número de historia clínica.
+* **EspecialidadMedica:** Describe una especialidad médica (ej. Cardiología, Pediatría, Cirugía).
+* **SalaAtencion:** Sala destinada a consultas o procedimientos simples.
+* **Quirofano:** Sala especializada para cirugías.
+
+### 2. Relaciones:
+
+* Un **Hospital** administra múltiples **Doctores**, **Enfermeros**, **Pacientes**, **SalasAtencion** y **Quirofanos**.
+* Cada **Doctor** tiene una **EspecialidadMedica**.
+* Un **Doctor** puede atender a varios **Pacientes**.
+* Un **Paciente** puede ser asignado a una **SalaAtencion** o programado en un **Quirofano**.
+* Un **Enfermero** puede estar asociado a una **SalaAtencion** o a un **Quirofano**.
+* Un **Quirofano** puede ser reservado para intervenciones quirúrgicas específicas.
+
+### 3. Funcionalidades mínimas:
+
+* Registrar nuevos doctores, enfermeros, pacientes y especialidades médicas.
+* Asignar pacientes a doctores y salas de atención.
+* Programar cirugías en quirófanos disponibles.
+* Gestionar la disponibilidad de salas y quirófanos.
+* Mostrar reportes con el listado de doctores, pacientes.
