@@ -12,4 +12,16 @@ public class Paciente {
         this.nombre = nombre;
         this.medicos = medicos;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public List<Medico> getMedicos() {
+        return medicos;
+    }
 }

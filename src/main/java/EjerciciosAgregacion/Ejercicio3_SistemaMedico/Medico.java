@@ -14,4 +14,20 @@ public class Medico {
         this.especialidad = especialidad;
         this.pacientes = pacientes;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getEspecialidad() {
+        return especialidad;
+    }
+
+    public List<Paciente> getPacientes() {
+        return pacientes;
+    }
 }
