@@ -12,7 +12,11 @@ public class Enfermero extends Persona{
         this.areaEnfermeros = areaEnfermeros;
     }
 
-    public void agregarEnfermero(AreaEnfermero areaEnfermero) {
+    public void agregarAreaEnfermero(AreaEnfermero areaEnfermero) {
         this.areaEnfermeros.add(areaEnfermero);
+    }
+
+    public void eliminarAreaEnfermero(AreaEnfermero areaEnfermero){
+        this.areaEnfermeros.remove(areaEnfermero);
     }
 }
