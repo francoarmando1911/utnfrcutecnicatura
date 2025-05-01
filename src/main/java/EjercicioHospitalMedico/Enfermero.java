@@ -12,7 +12,7 @@ public class Enfermero extends Persona{
         this.areaEnfermeros = areaEnfermeros;
     }
 
-    public static void agregarEnfermero(Enfermero enfermeros){
-        this.areaEnfermeros.add(Enfermero);
+    public void agregarEnfermero(AreaEnfermero areaEnfermero) {
+        this.areaEnfermeros.add(areaEnfermero);
     }
 }
