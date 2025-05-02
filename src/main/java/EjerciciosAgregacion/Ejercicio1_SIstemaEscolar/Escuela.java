@@ -16,7 +16,6 @@ public class Escuela {
         this.profesores = new ArrayList<>();
     }
 
-    // Getters y métodos para añadir cursos/profesores
     public List<Curso> getCursos() { return cursos; }
     public List<Profesor> getProfesores() { return profesores; }
     public void addCurso(Curso curso) { cursos.add(curso); }
