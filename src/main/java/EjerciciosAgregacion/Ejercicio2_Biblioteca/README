@@ -1,0 +1,3 @@
+Modelar una Biblioteca que tiene una lista de Libro, y permite que varios Usuario registren préstamos de libros.
+Los libros existen aunque la biblioteca desaparezca, y los usuarios pueden estar registrados en varias bibliotecas.
+Los préstamos (Prestamo) son una relación que asocia usuarios con libros de forma temporal.o
