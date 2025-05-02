@@ -1,0 +1,26 @@
+Crear un sistema donde una Escuela tiene una lista de Curso.
+Los Curso pueden ser impartidos por múltiples Profesor, que trabajan en varias escuelas.
+Los profesores existen independientemente de la escuela y pueden moverse entre cursos y escuelas.
+
++----------------+         +----------------+         +----------------+
+|    Escuela     |         |     Curso      |         |   Profesor     |
++----------------+         +----------------+         +----------------+
+| - nombre: String|         | - id: int      |         | - id: int      |
+| - direccion: String|      | - nombre: String|        | - nombre: String|
+| - cursos: List<Curso>|    | - profesores: List<Profesor> |                |
+| - profesores: List<Profesor>|+----------------+         +----------------+
++----------------+
+       ◇                                   |                ▲
+       |                                   |                |
+       | 0..*                             *|                | 0..*
+       ▼                                   ▼                |
++----------------+         +-------------------+            |
+|  Agregación    |         |   Asociación      |            |
++----------------+         +-------------------+            |
+       ◇                                                   |
+       |                                                   |
+       | 0..*                                             |
+       ▼                                                   |
++----------------+                                         |
+|  Agregación    |                                         |
++----------------+                                         |

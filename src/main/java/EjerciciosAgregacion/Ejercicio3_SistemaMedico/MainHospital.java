@@ -17,7 +17,7 @@ public class MainHospital {
         medico2.getPacientes().add(paciente2);
 
 
-        Hospital hospital1 = new Hospital("Hospital Central", "Calle Principal 123", "4");
+        Hospital hospital1 = new Hospital("Hospital Central", "Calle Principal 123");
         hospital1.getPacientes().add(paciente1);
         hospital1.getPacientes().add(paciente2);
 
