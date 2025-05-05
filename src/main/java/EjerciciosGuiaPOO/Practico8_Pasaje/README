@@ -1,0 +1,15 @@
+Se requiere desarrollar un programa que modele un sistema de peaje. Las
+estaciones de peaje tienen un nombre, departamento en que están ubicadas
+y un valor numérico que representa el valor total de peaje recolectado.
+Los vehículos que llegan a un peaje tienen una placa (tipo String). El
+peaje cobra diferentes valores de peaje según el tipo de vehículo. Si es un
+
+carro, el valor del peaje es de $10000. Si es una moto, $5000. Si es un ca-
+mión, el valor del peaje depende del número de ejes, se cobra $5000 por
+
+cada eje.
+Se requiere que la estación de peaje calcule el valor del peaje de cada
+
+vehículo que llegue y el total de peajes recolectados. Así, al finalizar, el sistema debe imprimir
+en pantalla un listado con los vehículos que llegaron al peaje y el total acumulado.
+
