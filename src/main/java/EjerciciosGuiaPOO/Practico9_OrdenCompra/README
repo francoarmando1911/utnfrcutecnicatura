@@ -1,0 +1,58 @@
+Una orden de compra tiene un identificador numérico y está compuesta de
+un conjunto de líneas de pedido.
+
+Una orden de compra cuenta con los siguientes métodos:
+u Un constructor que inicializa sus atributos.
+u Métodos get y set para el atributo identificador.
+u Calcular el total de una orden sumando los subtotales de cada lí-
+nea de pedido.
+u toString: este método devuelve un String que concatena los siguien-
+tes atributos: identificador, las líneas de pedido que conforman la
+orden y el total de la orden.
+u Añadir ítem: permite agregar una línea de pedido a la orden.
+
+Una línea de pedido consta de un identificador, la cantidad de pro-
+ducto solicitada y el producto solicitado en sí. Una línea de pedido cuenta
+con los siguientes métodos:
+u Un constructor que inicializa sus atributos.
+u Métodos get y set para sus atributos.
+u Calcular el subtotal de la línea de pedido, que es la multiplicación
+del precio del producto por su cantidad.
+u toString: este método devuelve un String que concatena los atribu-
+tos: identificador, cantidad y producto solicitado.
+
+Los productos tienen atributos como: identificador, nombre, descrip-
+ción y precio. Un producto cuenta con los siguientes métodos:
+u Un constructor que inicializa sus atributos.
+u Métodos get y set para sus atributos.
+u toString: este método devuelve un String que concatena los atribu-
+tos: identificador, nombre y precio.
+
+Se debe generar una clase de prueba con un método main para crear
+una orden de compra con los siguientes productos:
+
+u Producto 1:
+○ Identificador: 1
+○ Nombre: Carpeta
+○ Descripción: Carpeta anillada metálica
+○ Precio: $1000
+
+u Producto 2:
+○ Identificador: 2
+○ Nombre: Tinta
+○ Descripción: Tinta china de color negro
+○ Precio: $3000
+
+u Producto 3:
+○ Identificador: 3
+○ Nombre: Cinta pegante
+○ Descripción: Cinta adhesiva de color transparente
+○ Precio: $800
+
+u Producto 4:
+○ Identificador: 4
+○ Nombre: Cartulina
+○ Descripción: Pliego de cartulina 60 x 40 cm
+○ Precio: $600
+Se debe crear una orden de compra que tenga 5 carpetas, 3 tintas, 2
+cintas pegantes y 4 cartulinas
