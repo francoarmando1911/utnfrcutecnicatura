@@ -1,18 +1,3 @@
 Una clase Hospital tiene una lista de Paciente, pero los pacientes también pueden estar registrados en otros hospitales.
 Además, cada Paciente tiene uno o más Medico, y un médico puede atender a múltiples pacientes.
 Ninguno de estos objetos depende existencialmente de otro.
-
-+----------------+         +-------------------+         +----------------+
-|   Hospital     |         |     Paciente      |         |     Medico     |
-+----------------+         +-------------------+         +----------------+
-| - nombre: String|         | - id: int         |         | - id: int      |
-| - direccion: String|      | - nombre: String  |         | - nombre: String|
-| - pacientes: List<Paciente> | | - medicos: List<Medico> | | - especialidad: String |
-+----------------+         +-------------------+         | - pacientes: List<Paciente> |
-       ◇                                |                +----------------+
-       |                                |                       ▲
-       | *                            1..*                     *
-       ▼                                |                       |
-+----------------+                      +-----------------------+
-|  Agregación    |                      |      Asociación       |
-+----------------+                      +-----------------------+
