@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Orden {
     private int id;
-    private ArrayList<LineaPedido> itemsPedido;
+    ArrayList<LineaPedido> itemsPedido;
 
     public Orden(int id, ArrayList<LineaPedido> itemsPedido) {
         this.id = id;
@@ -43,7 +43,7 @@ public class Orden {
                 '}';
     }
 
-    public void addItem(int idr, int cantidad, Producto producto) {
+    public void addItem(int id, int cantidad, Producto producto) {
         LineaPedido linea = new LineaPedido(id, cantidad, producto);
         itemsPedido.add(linea);
     }
