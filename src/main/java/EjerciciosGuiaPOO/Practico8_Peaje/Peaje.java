@@ -34,7 +34,7 @@ public class Peaje {
             peaje = 5000;
             totalMotos++;
         } else if (vehiculo.equals("Camion")) {
-            Camion camion = (Camion) vehiculo;
+            Camion camion = new Camion(10, "AB036FN");
             peaje = 5000 * camion.getNumeroEjes();
             totalCamiones++;
         }
@@ -42,20 +42,4 @@ public class Peaje {
         return peaje;
     }
 
-    /*public int calcularTotalPeaje(Vehiculo vehiculo) {
-        int peaje = 0;
-        if (vehiculo instanceof Carro) {
-            peaje = 10000;
-            totalCarros++;
-        } else if (vehiculo instanceof Moto) {
-            peaje = 5000;
-            totalMotos++;
-        } else if (vehiculo instanceof Camion) {
-            Camion camion = (Camion) vehiculo;
-            peaje = 5000 * camion.getNumeroEjes();
-            totalCamiones++;
-        }
-        totalPeaje += peaje;
-        return peaje;
-    }*/
 }

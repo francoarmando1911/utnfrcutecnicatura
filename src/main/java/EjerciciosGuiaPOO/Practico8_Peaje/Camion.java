@@ -9,8 +9,16 @@ public class Camion {
         this.matricula = matricula;
     }
 
+    public int getNumeroEjes() {
+        return numeroEjes;
+    }
+
     public void setNumeroEjes(int numeroEjes) {
         this.numeroEjes = numeroEjes;
+    }
+
+    public String getMatricula() {
+        return matricula;
     }
 
     public void setMatricula(String matricula) {
