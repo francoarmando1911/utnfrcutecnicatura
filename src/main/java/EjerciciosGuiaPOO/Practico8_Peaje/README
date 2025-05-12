@@ -5,9 +5,7 @@ Los vehículos que llegan a un peaje tienen una placa (tipo String). El
 peaje cobra diferentes valores de peaje según el tipo de vehículo. Si es un
 
 carro, el valor del peaje es de $10000. Si es una moto, $5000. Si es un ca-
-mión, el valor del peaje depende del número de ejes, se cobra $5000 por
-
-cada eje.
+mión, el valor del peaje depende del número de ejes, se cobra $5000 porcada eje.
 Se requiere que la estación de peaje calcule el valor del peaje de cada
 
 vehículo que llegue y el total de peajes recolectados. Así, al finalizar, el sistema debe imprimir

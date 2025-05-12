@@ -1,4 +1,4 @@
-package EjerciciosGuiaPOO.Practico8_Pasaje;
+package EjerciciosGuiaPOO.Practico8_Peaje;
 
 import java.util.List;
 
@@ -23,6 +23,23 @@ public class Peaje {
 
     public void aniadirVehiculo(Vehiculo vehiculo){
         this.vehiculo.add(vehiculo);
+    }
+
+    public int calcularTotalPeaje(Vehiculo vehiculo){
+        int peaje = 0;
+        if (vehiculo.equals("Carro")){
+            peaje = 10000;
+            totalCarros++;
+        } else if (vehiculo.equals("Moto")) {
+            peaje = 5000;
+            totalMotos++;
+        } else if (vehiculo.equals("Camion")) {
+            Camion camion = (Camion) vehiculo;
+            peaje = 5000 * camion.getNumeroEjes();
+            totalCamiones++;
+        }
+        totalPeaje += peaje;
+        return peaje;
     }
 
     /*public int calcularTotalPeaje(Vehiculo vehiculo) {
