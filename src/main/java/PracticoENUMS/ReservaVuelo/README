@@ -1,0 +1,15 @@
+Enunciado: sistema de reservas de vuelo
+Diseña un sistema para gestionar reservas de vuelos. Cada reserva debe incluir:
+1.	Nombre del pasajero
+2.	Destino
+3.	Clase de asiento (Económica, Business, Primera)
+4.	Precio total del pasaje
+Se debe usar un enum llamado OrigenDestino que contenga:
+•	El nombre de la ciudad Origen.
+•	El nombre de la ciudad Destino.
+•	La distancia estimada en kilómetros.
+•	Un precio base por kilómetro.
+Otro enum, ClaseAsiento, tendrá un multiplicador de precio según la clase.
+La clase ReservaVuelo debe calcular el precio total con la siguiente fórmula:
+
+precio = (distancia * precioPorKm) * multiplicadorClase
