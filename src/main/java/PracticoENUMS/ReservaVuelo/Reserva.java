@@ -5,10 +5,20 @@ public class Reserva {
     OrigenDestino origenDestino;
     Asiento TipoAsiento;
 
+    private static final Double PRECIO_BASE = 2d;
 
-    //Calcular precio total: precio = (distancia * precioPorKm) * multiplicadorClase
+    public Reserva(Pasajero pasajero, OrigenDestino origenDestino, Asiento tipoAsiento) {
+        this.pasajero = pasajero;
+        this.origenDestino = origenDestino;
+        TipoAsiento = tipoAsiento;
+    }
 
-    public void calcularPrecio(OrigenDestino origenDestino, Asiento claseAsiento){
+    public Double calcularPrecio() {
+        return calcularPrecio(this.TipoAsiento, this.origenDestino);
+    }
+
+    public static Double calcularPrecio(Asiento tipoAsiento, OrigenDestino origenDestino) {
+        return origenDestino.getDistancia_km()*PRECIO_BASE * tipoAsiento.getMultiplicador();
 
     }
 
