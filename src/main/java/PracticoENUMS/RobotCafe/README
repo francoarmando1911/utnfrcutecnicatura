@@ -1,0 +1,20 @@
+Estás desarrollando el software para un robot expendedor de café. Este robot puede
+preparar distintos tipos de café siguiendo recetas predefinidas, donde cada receta
+requiere ciertas cantidades de ingredientes básicos: agua, café, leche y azúcar.
+Cada tipo de café tiene su propia receta. Debes modelar el sistema usando enum’s para
+representar los diferentes tipos de café, asociando a cada uno:
+ Cantidad de agua (ml)
+ Cantidad de café (g)
+ Cantidad de leche (ml)
+ Cantidad de azúcar (g)
+�� Objetivo
+
+Implementar un programa que:
+1. Use un enum llamado TipoCafe con las recetas para: ESPRESSO, LATTE,
+CAPPUCCINO, AMERICANO.
+2. Cree una clase RecetaCafe que reciba el tipo de café y pueda mostrar los ingredientes
+necesarios.
+3. Permita al usuario simular la selección de un tipo de café y ver los pasos de preparación.
+4. Permita al usuario solicitar un tipo de vaso PEQUENO(60ml), MEDIANO(160ml),
+GRANDE(224ml) y calcular su costo.
+5. Opcional: controlar si hay suficiente stock de ingredientes en el robot.
