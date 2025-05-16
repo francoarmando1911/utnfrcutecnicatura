@@ -1,0 +1,33 @@
+Ejercicio: Registro de Usuarios - Validación con Excepciones y Encapsulamiento
+🎯 Objetivo pedagógico
+•	Aplicar encapsulamiento en capas (mínimo 3 niveles: interfaz de usuario, servicio, utilidad).
+•	Manejar errores usando try-catch.
+•	Implementar y propagar excepciones personalizadas (wrapping).
+•	Favorecer la separación de responsabilidades y diseño limpio.
+
+🧱 Estructura por capas
+Nivel	Clase	Función
+Nivel 1	MainApp	Interfaz de entrada, simula ingreso de datos
+Nivel 2	RegistroService	Lógica de negocio para procesar el registro
+Nivel 3	ValidadorUsuario	Validaciones individuales (nombre, edad, correo)
+Excepciones	RegistroInvalidoException	Excepción personalizada que encapsula errores de validación
+
+✅ Resultado esperado
+Entrada válida:
+
+Ingrese nombre: Laura
+Ingrese edad: 25
+Ingrese correo: laura@email.com
+✅ Usuario registrado: Laura, Edad: 25, Correo: laura@email.com
+Entrada inválida (ej. edad negativa):
+
+Ingrese nombre: Pedro
+Ingrese edad: -4
+Ingrese correo: pedro@gmail.com
+❌ Registro fallido: Error en el registro de usuario
+🔍 Causa: La edad debe ser mayor a 0.
+
+📘 Aprendizajes clave
+•	Separación de lógica de entrada, validación y procesamiento.
+•	Encapsulamiento de errores a través de excepciones personalizadas.
+•	Uso correcto de try-catch para controlar errores esperados y mantener robustez.
